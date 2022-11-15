@@ -116,15 +116,20 @@ public class ScreenScraper {
         }
     }
 
-    public void setTypeAlert(int type){
-        typeAlert = type;
+    public void setTypeAlert(){
+
+        if(e_commerce != null){
+            typeAlert = e_commerce.getType();
+        }else {
+            typeAlert = 6;
+        }
     }
 
     public void getProductInfo(){
         setProductDescription();
         setProductLink();
         setProductImg();
-        setTypeAlert(6);
+        setTypeAlert();
         setProductPrice();
     }
 

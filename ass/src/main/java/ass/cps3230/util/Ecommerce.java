@@ -8,5 +8,4 @@ public interface Ecommerce {
     public int getType();
     public int getPrice();
 
-    public String getWebSiteName();
 }
